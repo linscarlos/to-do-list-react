@@ -108,7 +108,7 @@ export function Main(){
                 <div className={styles.toDoContent}>
                     <div className={styles.controlTask}>
                         <p>Tarefas criadas<span className={styles.taskCount}>{tasks[0].title === '' ? 0 : tasks.length}</span></p>
-                        <p>Concluídas<span className={styles.taskCount}>{countTaskCompleted}</span></p>
+                        <p>Concluídas<span className={styles.taskCount}>{countTaskCompleted} de {tasks[0].title === '' ? 0 : tasks.length}</span></p>
                     </div>
 
                     {tasks[0].title === '' ? (

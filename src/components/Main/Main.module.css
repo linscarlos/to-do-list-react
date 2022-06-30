@@ -180,3 +180,51 @@
 .listToDoFill .taskInput button:hover {
     color: var(--danger);
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px){
+    .mainContent {
+        width: 53.6rem;
+    }
+
+    .toDoContent {
+        width: 53.6rem;
+    }
+}
+
+@media (max-width: 560px){
+    .mainContent {
+        width: 94%;
+    }
+
+    .newToDo {
+        height: 11.4rem;
+        flex-direction: column;
+    }
+
+    .newToDo textarea{
+        width: 100%;
+    }
+
+    .toDoContent {
+        width: 94%;
+    }
+}
+
+@media (max-width: 350px){
+    .controlTask {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .taskCount {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .toDoContent {
+        margin-top: 4rem;
+    }
+}
